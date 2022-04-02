@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Epilogue', sans-serif;
+}
+
+%bold {
+  font-weight: 700;
+}
+
+%regular {
+  font-weight: 400;
+}
+
+%heading-xl {
+  font-size: 72px;
+  line-height: 78px;
+  letter-spacing: 1px;
+}
+
+%heading-l {
+  font-size: 48px;
+  line-height: 55px;
+  letter-spacing: -0.5px;
+}
+
+%heading-m {
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+}
+
+%heading-s {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -2.5px;
+}
+
+%body {
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0;
+}
+
+%footer {
+  font-size: 15px;
+  line-height: 32px;
+  letter-spacing: 0;
+}
+
+%dark-blue {
+  color: #172339;
+}
+
+%grey {
+  color: #49566d;
+}
+
+%cream {
+  color: #f3ede7;
+}
+
+%cream-white {
+  color: #faf8f6;
+}
+
+%light-blue {
+  color: #a060ff;
+}
+
+%orange {
+  color: #ffa84e;
+}
+
+%voilet {
+  color: #cb30e3;
+}
+
+button{
+  padding: .75rem 1.5rem;
+  border: 1px solid #172339;
+  border-radius: 5px;
+  @extend %bold;
+}
+
+.bold {
+  @extend %bold;
+}

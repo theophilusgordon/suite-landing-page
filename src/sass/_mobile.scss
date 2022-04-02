@@ -1,0 +1,48 @@
+@media screen and (max-width: 480px) {
+  body {
+    padding: 0 5%;
+  }
+
+
+  .home {
+    background: url("../images/image-hero-landscape.png") no-repeat;
+    background-position: center 60%;
+    height: 150vh;
+    justify-content: start;
+
+    &-text {
+      width: 100%;
+      margin-bottom: auto;
+      margin-top: 0;
+
+      p {
+        width: 100%;
+      }
+    }
+  }
+
+  .stats {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  article {
+     img {
+      &:nth-of-type(1){
+        position: relative;
+        top: -15vh;
+        height: 60vh;
+      }
+  }
+}
+
+  footer {
+    flex-direction: column;
+    margin: 3rem 0;
+  }
+
+  .social {
+    width: 50%;
+  }
+}

@@ -1,0 +1,157 @@
+@use 'config';
+
+body {
+  padding: 0 10%;
+}
+
+h1 {
+  @extend %regular;
+  @extend %heading-l;
+  @extend %dark-blue;
+
+}
+
+h2 {
+  @extend %cream-white;
+  @extend %heading-l;
+  @extend %regular;
+}
+
+h3 {
+  @extend %heading-l;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20vh;
+
+  button {
+    background-color: #faf8f6;
+    @extend %dark-blue;
+    transition: all .25s ease-out;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #172339;
+      @extend %cream-white;
+    }
+  }
+}
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  background: url("../images/image-hero-portrait.png") no-repeat center;
+  height: 80vh;
+
+  &-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      margin-top: 2rem;
+      margin-left: auto;
+      margin-bottom: 1rem;
+    }
+    
+    p {
+      margin: 3rem 0;
+      @extend %grey;
+      width: 60%;
+      @extend %body;
+    }
+
+    button {
+      margin-right: auto;
+      background-color: #172339;
+      color: white;
+      transition: all .25s ease-out;
+
+      &:hover {
+        cursor: pointer;
+        background-image: linear-gradient(160deg, #a060ff 60%, #ffa84e);
+        border: none;
+      }
+    }
+  }
+}
+
+.stats {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  p {
+    @extend %body;
+  }
+}
+
+article{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30vh;
+  background-color: #172339;
+  height: 70vh;
+  padding: 0 10%;
+  border-radius: 10px;
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+
+    p {
+      @extend %grey;
+      @extend %body;
+
+      &:nth-of-type(1) {
+        margin: 2rem 0;
+      }
+
+      &:nth-of-type(2) {
+        @extend %cream-white;
+      }
+    }
+  }
+
+  img {
+    &:nth-of-type(1){
+      position: relative;
+      top: -10vh;
+      height: 80vh;
+    }
+
+    &:nth-of-type(2){
+      margin-bottom: auto;
+      margin-top: 15vh;
+    }
+  }
+}
+
+footer {
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
+
+  &-icon {
+    fill: #172339;
+    transition: all .25s ease-out;
+
+    &:hover {
+      cursor: pointer;
+      fill: #49566d;
+    }
+  }
+}

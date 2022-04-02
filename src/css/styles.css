@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+}
+
+.bold, button {
+  font-weight: 700;
+}
+
+h1, h2 {
+  font-weight: 400;
+}
+
+h1, h2, h3 {
+  font-size: 48px;
+  line-height: 55px;
+  letter-spacing: -0.5px;
+}
+
+.home-text p, .stats p, article .text p {
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0;
+}
+
+h1, header button {
+  color: #172339;
+}
+
+.home-text p, article .text p {
+  color: #49566d;
+}
+
+h2, header button:hover, article .text p:nth-of-type(2) {
+  color: #faf8f6;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #172339;
+  border-radius: 5px;
+}
+
+body {
+  padding: 0 10%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20vh;
+}
+header button {
+  background-color: #faf8f6;
+  transition: all 0.25s ease-out;
+}
+header button:hover {
+  cursor: pointer;
+  background-color: #172339;
+}
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  background: url("../images/image-hero-portrait.png") no-repeat center;
+  height: 80vh;
+}
+.home-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.home-text img {
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-bottom: 1rem;
+}
+.home-text p {
+  margin: 3rem 0;
+  width: 60%;
+}
+.home-text button {
+  margin-right: auto;
+  background-color: #172339;
+  color: white;
+  transition: all 0.25s ease-out;
+}
+.home-text button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(160deg, #a060ff 60%, #ffa84e);
+  border: none;
+}
+
+.stats {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+article {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30vh;
+  background-color: #172339;
+  height: 70vh;
+  padding: 0 10%;
+  border-radius: 10px;
+}
+article .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+article .text p:nth-of-type(1) {
+  margin: 2rem 0;
+}
+article img:nth-of-type(1) {
+  position: relative;
+  top: -10vh;
+  height: 80vh;
+}
+article img:nth-of-type(2) {
+  margin-bottom: auto;
+  margin-top: 15vh;
+}
+
+footer {
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
+}
+.social-icon {
+  fill: #172339;
+  transition: all 0.25s ease-out;
+}
+.social-icon:hover {
+  cursor: pointer;
+  fill: #49566d;
+}
+
+@media screen and (max-width: 820px) {
+  header {
+    height: 10vh;
+  }
+
+  .home {
+    flex-direction: column;
+    background-position: top right;
+  }
+  .home-text {
+    width: 70%;
+    margin: auto 0;
+  }
+
+  .stats {
+    flex-direction: row;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  article {
+    height: max-content;
+    flex-direction: column;
+  }
+  article img:nth-of-type(2) {
+    margin: auto;
+  }
+  article .text {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    padding: 0 5%;
+  }
+
+  .home {
+    background: url("../images/image-hero-landscape.png") no-repeat;
+    background-position: center 60%;
+    height: 150vh;
+    justify-content: start;
+  }
+  .home-text {
+    width: 100%;
+    margin-bottom: auto;
+    margin-top: 0;
+  }
+  .home-text p {
+    width: 100%;
+  }
+
+  .stats {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  article img:nth-of-type(1) {
+    position: relative;
+    top: -15vh;
+    height: 60vh;
+  }
+
+  footer {
+    flex-direction: column;
+    margin: 3rem 0;
+  }
+
+  .social {
+    width: 50%;
+  }
+}
