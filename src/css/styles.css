@@ -123,6 +123,7 @@ article img:nth-of-type(1) {
   position: relative;
   top: -10vh;
   height: 80vh;
+  background: url("../images/pattern-blur.svg") no-repeat center;
 }
 article img:nth-of-type(2) {
   margin-bottom: auto;
