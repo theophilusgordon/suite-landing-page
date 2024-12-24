@@ -1,2 +1,3 @@
 *.html linguist-vendored
-src/* linguist-vendored
+*.css linguist-vendored
+*.scss linguist-vendored
